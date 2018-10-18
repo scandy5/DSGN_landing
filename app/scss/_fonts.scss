@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("Roboto Condensed", "../fonts/RobotoCondensedRegular/RobotoCondensedRegular");
+@include font-face("Roboto Condensed", "../fonts/RobotoCondensedBold/RobotoCondensedBold, bold");
+@include font-face("Roboto Condensed", "../fonts/RobotoCondensedLight/RobotoCondensedLight, 200");
+

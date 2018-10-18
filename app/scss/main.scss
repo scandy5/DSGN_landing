@@ -1,0 +1,101 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	margin: 0;
+	padding: 0;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+}
+h4 {
+	line-height: 14px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+b, strong {
+	font-weight: bold;
+}
+.grid {
+	display: grid;
+}
+.header {
+	grid-template-columns: 2fr 1fr;
+}
+.header__logo {
+	margin-right: 100px;
+}
+.header-left {
+	display: flex;
+	background-color: #E9EAE2;
+	min-height: 504px;
+	padding: 50px 0 0 168px;
+}
+.header-socials {
+	margin-left: 20px;
+	margin-top: 62px;
+}
+.header-socials a {
+	color: #7acec3;
+}
+.header-left h4 {
+	font-size: 18px;
+	line-height: 18px;
+}
+.header-right {
+	background-color: #7acec3;
+	position: relative;
+}
+.header-right > img {
+	position: absolute;
+	top: 50px;
+	right: 36%;
+}
+.header-right:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top:0;
+  right: 0;  
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="100%" y2="0" stroke="#fff" stroke-width="2"/></svg>');
+  background-size: cover;
+  opacity: .5;
+}
+.header-right h4.first {
+	color: #fff;
+	position: absolute;
+	top: 262px;
+	left: 10%;
+}
+.header-right h4.second {
+	color: #fff;
+	position: absolute;
+	top: 373px;
+	left: 35%;
+}
+
+
+@import "media"; // Always at the end
