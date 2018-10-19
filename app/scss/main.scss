@@ -145,7 +145,7 @@ b, strong {
 .projects-second {
 	position: absolute;
 	top: 250px;
-	left: 180px;
+	left: 160px;
 }
 .projects-second h2{
 	font-size: 48px;
@@ -154,6 +154,10 @@ b, strong {
 }
 .project_left-fondue {
 	grid-column: span 16;
+	max-height: 450px;
+}
+.project_left-fondue img {
+	max-height: 450px;
 }
 
 
