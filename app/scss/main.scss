@@ -218,5 +218,67 @@ a.view img {
 	margin-top: 100px;
 	margin-left: 68px;
 }
+.project_left-louis {
+	grid-column: span 6;
+	position: relative;
+}
+.project_left-louis > img {
+	position: relative;
+}
+.louis__content {
+	position: absolute;
+	top: 40px;
+	left: 32px;
+	color: #fff;
+}
+.louis__content h4 {
+	margin-top: 18px;
+	margin-bottom: 38px;
+}
+.louis__content a.view {
+	color: #fff;
+}
+.louis__content a.view:hover {
+	color: darken(#fff, 30%);
+}
+.louis__content .heart-icon {
+	margin-left: 68px;
+}
+.louis__content .heart-icon .fa-heart {
+	color: #fff;
+	margin-top: 30px;
+}
+
+.louis__content .heart-icon small {
+	color: #fe7c7c;
+}
+.project_left-p22 {
+	grid-column: span 18;
+	background-color: #eaeaea;
+	position: relative;
+}
+.project_left-p22 > img{
+	width: 50%;
+	position: absolute;
+	top: 70px;
+	left: 115px;
+	z-index: 0;
+}
+.p22__content {
+	display: flex;
+	margin-left: 360px;
+	margin-top: 92px;
+	position: relative;
+	z-index: 1;
+}
+.p22__content-left {
+	margin-right: 16px;
+}
+.p22__content-left h4 {
+	margin-top: 16px;
+}
+.p22__content-right .heart-icon {
+	margin: 25px auto;
+}
 
 @import "media"; // Always at the end
