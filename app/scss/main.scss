@@ -21,13 +21,24 @@ h4 {
 	font-size: 13px;
 	font-weight: normal;
 }
-
+h3 {
+	line-height: 14px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
 .img-responsive {
 	display: block;
 	max-width: 100%;
+	height: auto;
 	&.img-width {
 		width: 100%;
 	}
+}
+small{
+	font-size: 11px;
+	color: #ff0000;
+	text-transform: uppercase;
 }
 
 .text-center {
@@ -38,6 +49,9 @@ b, strong {
 }
 .grid {
 	display: grid;
+}
+.flex {
+	display: flex;
 }
 .header {
 	grid-template-columns: repeat(24, 1fr);
@@ -144,7 +158,7 @@ b, strong {
 }
 .projects-second {
 	position: absolute;
-	top: 250px;
+	top: 300px;
 	left: 160px;
 }
 .projects-second h2{
@@ -155,10 +169,54 @@ b, strong {
 .project_left-fondue {
 	grid-column: span 16;
 	max-height: 450px;
+	background-color: #FEFEFE;
 }
 .project_left-fondue img {
 	max-height: 450px;
 }
+.fondue-flex {
+	display: flex;
+	justify-content: space-between;
+}
+.fondue-left {
+	margin-top: 87px;
+	margin-left: 103px;
+}
+.fondue-left h4 {
+	margin-top: 17px;
+	margin-bottom: 76px;
+}
+a.view {
+	font-size: 18px;
+	font-weight: 200;
+	color: #333;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .25s ease;
+}
+a.view:hover {
+	color: lighten(#333, 40%);
+}
+a.view img {
+	padding-right: 8px;
+}
+.heart-icon {
+	width: 26px;
+	text-align: center;
+	cursor: pointer;
+	transition: all .25s ease;
+}
+.heart-icon:hover {
+	transform: scale(1.1)
+}
 
+.fa-heart {
+	color: #333;
+	font-size: 22px;
+}
+.fondue-left .heart-icon {
+	margin-top: 100px;
+	margin-left: 68px;
+}
 
 @import "media"; // Always at the end
