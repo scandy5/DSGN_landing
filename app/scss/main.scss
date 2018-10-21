@@ -138,6 +138,7 @@ b, strong {
 	grid-column: span 8;
 	background-color: #ebb240;
 	position: relative;
+	max-height: 450px;
 }
 .projects-first{
 	display: flex;
@@ -212,7 +213,7 @@ a.view img {
 
 .fa-heart {
 	color: #333;
-	font-size: 22px;
+	font-size: 23px;
 }
 .fondue-left .heart-icon {
 	margin-top: 100px;
@@ -224,6 +225,7 @@ a.view img {
 }
 .project_left-louis > img {
 	position: relative;
+	min-width: 100%;
 }
 .louis__content {
 	position: absolute;
@@ -258,7 +260,7 @@ a.view img {
 	position: relative;
 }
 .project_left-p22 > img{
-	width: 50%;
+	width: 52%;
 	position: absolute;
 	top: 70px;
 	left: 115px;
@@ -280,5 +282,59 @@ a.view img {
 .p22__content-right .heart-icon {
 	margin: 25px auto;
 }
-
+.project_right {
+	grid-template-rows: repeat(24, 1fr);
+	grid-column: span 6;
+}
+.project_right-potter {
+	grid-row: span 6;
+	padding: 15px 10px 5px 25px;
+	background-color: #dfe0d9;
+}
+.project_right-potter > img {
+	width: 50%;
+	align-self: start;
+}
+.potter__content h4 {
+	text-transform: none;
+	margin: 13px 0 16px;
+}
+.potter__content .heart-icon {
+	margin: 25px auto 0;
+}
+.project_right-tabano {
+	grid-row: span 12;
+	background-color: #e9eae2;
+}
+.project_right-tabano > img {
+	width: 50%;
+	margin: 5% auto 0;
+}
+.tabano__content{ 
+	justify-content: center;
+	align-items: center;
+	margin: 20px 5px;
+}
+.tabano__content-text h4{
+	margin-top: 17px;
+	margin-right: 24px;
+}
+.tabano__content a.view {
+	margin-right: 15px;
+}
+.project_right-fiji {
+	grid-row: span 6;
+	padding: 25px 20px 25px 35px;
+	justify-content: space-between;
+}
+.project_right-fiji > img {
+	align-self: center;
+	max-height: 80%;
+}
+.fiji__content h4 {
+	margin: 8px 0 15px;
+}
+.fiji__content .heart-icon {
+	margin: 16px auto 0;
+}
 @import "media"; // Always at the end
