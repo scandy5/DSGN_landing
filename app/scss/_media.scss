@@ -1,8 +1,14 @@
 @import "vars";
 
 
-/*==========  Desktop First  ==========*/
+@media (min-width: 1201px) and (max-width: 1400px) {
+	
+}
+	
 
+
+
+/*==========  Desktop First  ==========*/
 // ≥1200px
 @include media-breakpoint-down(lg) {
 	
