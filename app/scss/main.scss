@@ -717,6 +717,7 @@ a.view img {
 	transition: all 600ms ease;
 	z-index: 214124;
 }
+
 #sidebar.active {
 	right: 150px;
 }	
@@ -740,14 +741,20 @@ a.view img {
 
 #sidebar .toggle-btn {
 	position: absolute;
-	right: 950px;
-	top: 35px;
+	right: 770px;
+	top: 0px;
 	background-image: url('../img/cube.png');
-	background-size: contain;
+	background-color: darken(#7acec3, 20%);
+	background-size: cover;
 	width: 125px;
 	height: 120px;
 	padding: 10px;
 	cursor: pointer;
+	opacity: .4;
+	transition: all .5s ease;
+	&:hover {
+		opacity: 1;
+	}
 }
 .active-btn {
 	position: absolute;
@@ -761,6 +768,7 @@ a.view img {
 	padding: 10px;
 	border-radius: 10px;
 	cursor: pointer;
+	transition: all .25s ease;
 	&:hover {
 		transform: rotate(2deg);
 	}
