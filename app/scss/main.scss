@@ -3,6 +3,11 @@
 @import "libs";
 
 
+iframe {
+	width: 50%;
+	height: 100%;
+	border: 0;
+}
 
 body {
 	font-size: 16px;
@@ -744,7 +749,7 @@ a.view img {
 	right: 770px;
 	top: 0px;
 	background-image: url('../img/cube.png');
-	background-color: darken(#7acec3, 20%);
+	background-color: darken(#7acec3, 32%);
 	background-size: cover;
 	width: 125px;
 	height: 120px;

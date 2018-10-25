@@ -41,18 +41,22 @@
 				<img src="img/img.png" alt="chair" class="img-responsive">
 			</div>
 		</div>
+
+		<!-- sidebar -->
+		<div id="sidebar" class="btn-fixed" onclick="openMenu()">
+			<div class="toggle-btn" id="toggle-btn"></div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#studio">Studio</a></li>
+				<li><a href="#news">News</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+
 		<div class="header-right triagles">
 			<div class="header-right__img">
-				<div id="sidebar" class="btn-fixed" onclick="openMenu()">
-					<div class="toggle-btn" id="toggle-btn" onclick="closeMenu()"></div>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#studio">Studio</a></li>
-						<li><a href="#news">News</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
+				
 			</div>
 			<h4 class="first">90802 California <br>
 			Long beach <br>
@@ -69,11 +73,13 @@
 		<div class="project_left grid">
 			<div class="project_left-projects triagles">
 				<div class="projects-first">
-					<h4> <!-- <i class="fas fa-arrow-right first-arrow"></i> --> <a href="javasctipt:void=0" class="first-link-arrow">All</a>  <br>
-				<!-- 	<i class="fas fa-arrow-right second-arrow"></i> --> <a href="javasctipt:void=0" class="second-link-arrow">House</a>  <br>
-					<!-- <i class="fas fa-arrow-right third-arrow"></i> --> <a href="javasctipt:void=0" class="third-link-arrow">Commercial</a>  <br>
-					<!-- <i class="fas fa-arrow-right fourth-arrow"></i> --> <a href="javasctipt:void=0" class="fourth-link-arrow">Personal</a>  <br>
-					<!-- <i class="fas fa-arrow-right fifth-arrow"></i> --> <a href="javasctipt:void=0" class="fifth-link-arrow">Studio Lab</a> </h4>
+					<h4> 
+						<a href="javasctipt:void=0" class="first-link-arrow">All</a>  <br>
+					 	<a href="javasctipt:void=0" class="second-link-arrow">House</a>  <br>
+						<a href="javasctipt:void=0" class="third-link-arrow">Commercial</a>  <br>
+						<a href="javasctipt:void=0" class="fourth-link-arrow">Personal</a>  <br>
+						<a href="javasctipt:void=0" class="fifth-link-arrow">Studio Lab</a> 
+					</h4>
 				</div>
 				<div class="projects-second">
 					<h2>PROJECTS</h2>
@@ -253,14 +259,14 @@
 				<img src="img/red-cube.png" alt="cube" class="responsive">
 			</div>
 			<div class="row studio_first-part">
-				<div class="col-4 offset-4">
+				<div class="col-4 offset-4 d-none d-lg-block">
 					<p class="studio__text-first"><b><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin eros sit amet nulla rhoncus dictum.</i></b></p>
 					<p class="studio__text-first last-child"><b><i>Nam rhoncus fringilla dolor vitae vulputate. Nullam quis eros lorem. Integer cursus erat a orci congue feugiat. Cras rhoncus mollis libero, id aliquet purus varius sed.</i></b></p>	
 					<p class="studio__text-second">Aenean ullamcorper porta nisl, ac lobortis elit commodo placerat.</p>	
 					<p class="studio__text-second">Vivamus eget laoreet enim. Sed nunc dui, egestas vel diam convallis, faucibus iaculis sapien. Sed ut vulputate nisi. </p>
 					<p class="studio__text-second">Proin tempor risus tellus. Maecenas sit amet fringilla urna, vel iaculis velit. Sed ac felis et sem mollis dictum sed id orci.</p>		
 				</div>
-				<div class="col-4">
+				<div class="col-lg-4 offset-lg-0 col-sm-8 offset-4">
 					<img src="img/studio_img.png" alt="img" class="img-responsive">
 					<div class="studio-awards">
 						<h3 class="awards-title">awards</h3>
@@ -278,7 +284,7 @@
 				</div>
 			</div>
 			<div class="row studio_second-part">
-				<div class="col-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="staff">
 						<h3 class="staff__title">Staff.</h3>
 						<p class="staff__desc">Sit amet laoreet sapien dictum. Sed eget eros augue. Pellentesque tempor mi sit amet nisi tincidunt tincidunt. Fusce malesuada lectus sed mauris pharetra faucibus. </p>
@@ -286,7 +292,7 @@
 						<p class="staff__desc">Morbi sagittis diam mauris, in adipiscing nulla convallis ut.</p>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="member-card">
 						<div class="member__photo">
 							<img src="img/member1.jpg" alt="1" class="img-responsive">
@@ -310,7 +316,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="member-card">
 						<div class="member__photo">
 							<img src="img/member2.jpg" alt="1" class="img-responsive">
@@ -334,7 +340,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="member-card">
 						<div class="member__photo">
 							<img src="img/member3.jpg" alt="1" class="img-responsive">
@@ -401,10 +407,10 @@
 	<footer class="footer" id="contact">
 		<div class="container">
 			<div class="footer-map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212190.21227370112!2d-118.2961969308314!3d33.80012888271663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cae84099d759%3A0xa1003afac42a8faa!2z0JvQvtC90LMt0JHQuNGHLCDQmtCw0LvQuNGE0L7RgNC90LjRjywg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1540398770461" width="50%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212190.21227370112!2d-118.2961969308314!3d33.80012888271663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cae84099d759%3A0xa1003afac42a8faa!2z0JvQvtC90LMt0JHQuNGHLCDQmtCw0LvQuNGE0L7RgNC90LjRjywg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1540398770461" frameborder="0"  allowfullscreen></iframe>
 			</div>
 			<div class="row footer__text">
-				<div class="col-2 offset-7">
+				<div class="col-5 offset-7 order-2">
 					<p class="footer__text-right">90802 California
 					Long beach
 					PO Box 68789
@@ -413,7 +419,7 @@
 					<p class="footer__text-right">+64 9 345 6758
 					info@dsgn-studio.com</p>
 				</div>
-				<div class="col-3">
+				<div class="col-sm-5 col-lg-3 offset-7 order-1">
 					<div class="footer__logo">
 						<img src="img/DSGN.png" alt="logo">
 						<h4>ASSOCIATES<br>
@@ -429,7 +435,7 @@
 				</div>
 			</div>
 			<div class="row footer__copyright">
-				<div class="col-4 offset-7">
+				<div class="col-sm-5 col-lg-4 offset-7">
 					<p><i class="far fa-copyright"></i> 2014  DSGN. All rights reserved - Designed by theuncreativelab.com</p>
 				</div>
 			</div>

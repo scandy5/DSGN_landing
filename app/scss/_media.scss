@@ -80,7 +80,136 @@
 
 // ≥1100px
 @include media-breakpoint-down(md) {
-	
+	#sidebar {
+		width: 500px;
+		right: -510px;
+		top: 10px;
+	}
+	.active-btn {
+		position: absolute;
+		background-image: url('../img/close.png');
+		background-size: contain;
+		right: 120px;
+		left: 510px;
+	}
+	#sidebar .toggle-btn {
+		right: 520px;
+		top: 0px;
+		background-image: url('../img/cube.png');
+		background-color: darken(#F2F2F1, 20%);
+	}
+	.header-left {
+		grid-column: span 24; 
+		.logo-img {
+			right: 50px;
+			width: 350px;
+		}
+	}
+	.header-right {
+		display: none;
+	}
+	.project_left {
+		grid-column: span 24;
+	}
+	.project_right {
+		grid-column: span 24;
+		grid-template-rows: none;
+	}
+	.project_right-tabano {
+		grid-row: none;
+	}
+	.project_right-potter {
+		grid-row: none;
+	}
+	.project_right-fiji {
+		grid-row: none;
+	}
+	.project_bottom-timeline {
+		display: none;
+	}
+	.projects-second{
+		top: 200px;
+		left: 50px;
+	}
+	.fondue-left {
+		margin-top: 20px;
+		margin-left: 103px;
+	}
+	.p22__img{
+		width: 50%;
+		top: 40px;
+		left: 80px;
+	}
+	.project_right-potter {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.potter__img {
+		width: 40%;
+		top: 200px;
+		bottom: 10px;
+		left: 50%;
+		right: 5px;
+	}
+	.tabano__content {
+		h4 {
+			margin-right: 0;
+		}
+	}
+	.project_right-fiji {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		.fiji__content {
+			margin: 0;
+			margin-top: 20px;
+		}
+		.fiji__img {
+			position: absolute;
+			top: 60%;
+			bottom: 0;
+			width: 50%;
+			left: 20%;
+			right: 30%;
+		}
+	}
+	.project_bottom-sesann {
+		grid-column: span 18;
+	}
+	.studio {
+		padding-top: 20px;
+	}
+	.member-card {
+		width: 270px;
+		margin: 0 auto 20px;
+	}
+	.studio_second-part {
+		display: flex;
+		justify-content: space-between;
+	}
+	.news {
+		padding-top: 0;
+		.card__title {
+			height: 72px;
+		}
+		.card__desc {
+			height: 98px;
+		}
+	}
+	.footer {
+		padding: 0;
+		.footer__logo {
+			margin: 0 auto;
+			.footer-socials {
+				margin-bottom: 40px;
+				margin-top: 20px;
+			}
+		}
+
+	}
+
 }
 
 // ≥768px
