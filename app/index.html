@@ -43,7 +43,20 @@
 		</div>
 		<div class="header-right triagles">
 			<div class="header-right__img">
-				<img src="img/cube.png" alt="cube" class="img-responsive">
+				<div id="sidebar" onclick="openMenu()">
+					<div class="toggle-btn" id="toggle-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#studio">Studio</a></li>
+						<li><a href="#news">News</a></li>
+						<li><a href="#contant">Contact</a></li>
+					</ul>
+				</div>
 			</div>
 			<h4 class="first">90802 California <br>
 			Long beach <br>
@@ -56,16 +69,15 @@
 	</header>
 	<!-- Header -->
 
-	<section class="project grid">
+	<section class="project grid" id="projects">
 		<div class="project_left grid">
 			<div class="project_left-projects triagles">
 				<div class="projects-first">
-					<img src="img/arrow_icon.svg" alt="arrow">
-					<h4><b>All</b> <br>
-					House <br>
-					Commercial <br>
-					Personal <br>
-					Studio Lab</h4>
+					<h4> <!-- <i class="fas fa-arrow-right first-arrow"></i> --> <a href="javasctipt:void=0" class="first-link-arrow">All</a>  <br>
+				<!-- 	<i class="fas fa-arrow-right second-arrow"></i> --> <a href="javasctipt:void=0" class="second-link-arrow">House</a>  <br>
+					<!-- <i class="fas fa-arrow-right third-arrow"></i> --> <a href="javasctipt:void=0" class="third-link-arrow">Commercial</a>  <br>
+					<!-- <i class="fas fa-arrow-right fourth-arrow"></i> --> <a href="javasctipt:void=0" class="fourth-link-arrow">Personal</a>  <br>
+					<!-- <i class="fas fa-arrow-right fifth-arrow"></i> --> <a href="javasctipt:void=0" class="fifth-link-arrow">Studio Lab</a> </h4>
 				</div>
 				<div class="projects-second">
 					<h2>PROJECTS</h2>
@@ -92,7 +104,6 @@
 				</div>
 			</div>
 			<div class="project_left-louis">
-				
 					<div class="louis__img">
 						<img src="img/chair2.png" alt="chair2">
 					</div>
@@ -240,7 +251,7 @@
 		</div>
 	</section>
 		<!-- project bottom -->
-	<section class="studio">
+	<section class="studio" id="studio">
 		<div class="container">
 			<div class="studio-logo">
 				<img src="img/red-cube.png" alt="cube" class="responsive">
@@ -355,6 +366,79 @@
 		</div>
 	</section>
 	<!-- studio -->
+	<section class="news" id="news">
+		<div class="container">
+			<div class="news-logo">
+				<img src="img/green_cube.jpg" alt="cube" class="img-responsive">
+			</div>
+			<div class="row news_first-part">
+				<div class="col-4 offset-4">
+					<div class="news__top-card">
+						<h2 class="card__title">Mauris et dui sed justo placerat tristique.</h2>
+						<small class="card__date">11.07.2014</small>
+						<div class="card__img">
+							<img src="img/lamp.jpg" alt="lamp" class="img-responsive">
+						</div>
+						<p class="card__desc">Maecenas imperdiet nisi lorem, sed fermentum tortor pretium eget. Sed mollis lacus quis nunc cursus cursus. Quisque et magna sit amet sapien fermentum scelerisque eu id massa. Mauris ornare massa vel mauris tempus, vitae tempus urna tincidunt. </p>
+						<div class="card__link">
+							<a href="javascript:void=0">read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="news__top-card">
+						<h2 class="card__title">Proin vehicula nibh massa </h2>
+						<small class="card__date">11.06.2014</small>
+						<div class="card__img">
+							<img src="img/sofa.jpg" alt="sofa" class="img-responsive">
+						</div>
+						<p class="card__desc">Praesent non mauris nec orci scelerisque faucibus. Nulla ac varius est. Aenean auctor nisl elit, nec sollicitudin lectus iaculis sed. Maecenas aliquam ligula vitae pharetra scelerisque. </p>
+						<div class="card__link">
+							<a href="javascript:void=0">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.news -->
+	<footer class="footer" id="contact">
+		<div class="container">
+			<div class="footer-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212190.21227370112!2d-118.2961969308314!3d33.80012888271663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cae84099d759%3A0xa1003afac42a8faa!2z0JvQvtC90LMt0JHQuNGHLCDQmtCw0LvQuNGE0L7RgNC90LjRjywg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1540398770461" width="50%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="row footer__text">
+				<div class="col-2 offset-7">
+					<p class="footer__text-right">90802 California
+					Long beach
+					PO Box 68789
+					300 East Ocean 
+					Boulevard</p>
+					<p class="footer__text-right">+64 9 345 6758
+					info@dsgn-studio.com</p>
+				</div>
+				<div class="col-3">
+					<div class="footer__logo">
+						<img src="img/DSGN.png" alt="logo">
+						<h4>ASSOCIATES<br>
+						STUDIO<br>
+						DESIGN</h4>
+						<div class="footer-socials">
+							<a href="javasctript:void=0"><i class="fab fa-facebook-f"></i></a>
+							<a href="javasctript:void=0"><i class="fab fa-twitter"></i></a>
+							<a href="javasctript:void=0"><i class="fab fa-linkedin-in"></i></a>
+							<a href="javasctript:void=0"><i class="fab fa-google-plus-g"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer__copyright">
+				<div class="col-4 offset-7">
+					<p><i class="far fa-copyright"></i> 2014  DSGN. All rights reserved - Designed by theuncreativelab.com</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	
 
@@ -362,3 +446,6 @@
 
 </body>
 </html>
+
+
+

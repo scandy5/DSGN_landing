@@ -63,10 +63,22 @@ b, strong {
 	grid-column: span 18;
 	display: flex;
 	justify-content: space-between;
-	background-color: #E9EAE2;
+	background-color: #F3F3F3;
 	padding: 50px 0 0 168px;
 	max-height: 500px;
 	position: relative;
+
+	&:after {
+		content: '\A';
+		position: absolute;
+		width: 100% ;
+		height: 100%;
+		top: 0 ;
+		left: 0;
+		background-color: rgba(233,234,226, .1);
+		opacity: 1;
+		
+	}
 }
 .header-left div {
 	max-height: 400px;
@@ -110,7 +122,7 @@ b, strong {
 	position: relative;
 	padding-top: 100%;
 }
-.triagles::after {
+.triagles::before {
   content: '';
   position: absolute;
   left: 0;
@@ -126,16 +138,17 @@ b, strong {
 .header-right h4.first {
 	color: #fff;
 	position: absolute;
-	top: 220px;
+	bottom: 120px;
 	left: 7%;
 }
 .header-right h4.second {
 	color: #fff;
 	position: absolute;
-	top: 330px;
+	bottom: 50px;
 	right: 30%;
 
 }
+
 .project {
 	grid-template-columns: repeat(24, 1fr);
 }
@@ -160,11 +173,41 @@ b, strong {
 }
 .projects-first h4 {
 	color: #fff;
+}
 
+
+// arrow-hover 
+.projects-first {
+	a {
+		transition: all .25s ease;
+		color: #fff;
+		text-decoration: none;
+		position: relative;
+		&:before {
+			content: '';
+			background-image: url('../img/arrow_icon.svg');
+			background-position: center center;
+			background-size: cover;
+			width: 23px;
+			height: auto;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: -30px;
+			opacity: 0;
+		}
+	}
+	.first-link-arrow:hover, .second-link-arrow:hover, .third-link-arrow:hover, .fourth-link-arrow:hover, .fifth-link-arrow:hover {
+		color: #333;
+		font-weight: 700;
+		&:before {
+			opacity: 1;
+		}
+	}
 }
-.projects-first h4 b {
-	color: #000;
-}
+// end arrow-hover
+
 .projects-second {
 	position: absolute;
 	top: 300px;
@@ -345,7 +388,6 @@ a.view img {
 	max-height: 450px;
 }
 .tabano__content{ 
-	
 	align-items: center;
 	margin: 70% 5px 0;
 }
@@ -562,8 +604,166 @@ a.view img {
 			}
 		}
 	}
-	
+}
+.news-logo {
+	img{
+		position: absolute;
+		width: 25%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+.news {
+	position: relative;	
+	background-color: #e5e9df;
+	padding-top: 80px;
+	padding-bottom: 64px;
+	.news__top-card {
+		.card__title {
+			font-size: 24px;
+			line-height: 24px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #333;
+			min-height: 45px;
+			margin-bottom: 0;
+		}
+		.card__date {
+			font-size: 12px;
+			line-height: 24px;
+			color: #6a6969;
+			margin-bottom: 18px;
+			display: block;
+		}
+		.card__desc {
+			text-align: justify;
+			color: #6a6969;
+			line-height: 14px;
+			min-height: 55px;
+			margin: 22px 0 9px;
+			font-size: 12px;
+		}
+		.card__link {
+			text-align: right;
+			font-size: 12px;
+			text-transform: uppercase;
+			a {
+				color: #fd5000;
+				text-decoration: none;
+				&:hover {
+					color: lighten(#fd5000, 20%);
+				}
+			}
+		}
+	}
+}
+.footer-map {
+	iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+.footer {
+	padding-top: 150px;
+	position: relative;
+	background-color: #e5e9df;
+	.footer__logo {
+		margin-left: 90px;
+	}
+	.footer__text-right {
+		font-size: 13px;
+		line-height: 14px;
+		text-transform: uppercase;
+	}
+	.footer-socials {
+		margin-left: 20px;
+		margin-top: 62px;
+		margin-bottom: 82px;
+	}
+	.footer-socials a {
+		color: #7acec3;
+	}
+	h4 {
+		font-size: 18px;
+		line-height: 18px;
+	}
+	p {
+		font-size: 12px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
 
+
+}
+
+// Menu
+
+#sidebar {
+	width: 750px;
+	height: 120px;
+	background-color: #f8c255;
+	position: fixed;
+	right: -760px;
+	top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	-moz-transition: all 600ms ease;
+	-webkit-transition: all 600ms ease;
+	transition: all 600ms ease;
+	z-index: 214124;
+}
+#sidebar.active {
+	right: 150px;
+}	
+#sidebar ul {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+	padding: 0;
+}
+#sidebar ul li {
+	list-style: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 15px 10px;
+}
+#sidebar ul li a {
+	color: #eee;
+	text-decoration: none;
+}
+#sidebar ul li a:hover{color: #333;}
+
+#sidebar .toggle-btn {
+	position: absolute;
+	right: 950px;
+	top: 35px;
+	background-image: url('../img/cube.png');
+	background-size: contain;
+	width: 125px;
+	height: 120px;
+	padding: 10px;
+	cursor: pointer;
+}
+.active-btn {
+	position: absolute;
+	background-image: url('../img/close.png');
+	background-size: contain;
+	right: 120px;
+	left: 760px;
+	top: 0px;
+	width: 125px;
+	height: 120px;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	&:hover {
+		transform: rotate(2deg);
+	}
 }
 
 
