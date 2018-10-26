@@ -74,6 +74,12 @@
 		margin-top: 10px;
 		margin-left: 50%;
 	}
+	#navigation {
+		right: 260px;
+	}
+	.hamburger {
+		right: 140px;
+	}
 
 
 }
@@ -209,8 +215,29 @@
 		}
 
 	}
-
+	#navigation {
+		position: absolute;
+		background-color: #f8c255;
+		top: 10px;
+		width: 600px;
+		height: 120px;
+		left: 140px;
+		z-index: 231;
+	}
+	.hamburger {
+		position: absolute;
+		top: 10px;
+		z-index: 23123;
+		left: 20px;
+		max-width: 124px;
+		height: 119px;
+		border: 1px solid #fff;
+	}
+	.hamburger-inner::after, .hamburger-inner, .hamburger-inner::before{
+		background-color: #666;
+	}
 }
+
 
 // ≥768px
 @include media-breakpoint-down(sm) {
