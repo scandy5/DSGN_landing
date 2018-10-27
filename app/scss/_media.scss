@@ -1,9 +1,5 @@
 @import "vars";
 
-
-@media (min-width: 1201px) and (max-width: 1400px) {
-	
-}
 	
 
 
@@ -241,12 +237,176 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+	#navigation {
+		width: 450px;
 
+	}
+	.header__logo {
+		width: 25%;
+	}
+	.header-left > .logo-img {
+		width: 270px;
+
+	}
+	.projects-first{
+		top: 20px;
+		left: 40px;
+	}
+	.projects-second {
+		transform: rotate(-56deg);
+		top: 180px;
+		left: -13px;
+	}
+	.fondue-left {
+		margin-top: 30px;
+		margin-left: 30px;
+		z-index: 2;
+	}
+	.louis__content {
+		top: 5px;
+		left: 5px;
+	}
+	.louis__content h4 {
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+	.p22__img {
+		width: 35%;
+		top: 25%;
+		left: 10px;
+	}
+	.p22__content {
+		margin-left: 170px;
+		margin-top: 50px;
+	}
+	.potter__content {
+		.heart-icon {
+			margin: 20px 0 0 0;
+		}
+	}
+	.tabano__img {
+		width: 40%;
+		margin: 0 auto;
+	}
+	.sesann__content {
+		margin-top: 150px;
+		& h4 {
+			margin-right: 20px;
+		}
+		& .view {
+			margin-right: 20px;
+		}
+	}
+	.alessi__content {
+		margin-top: 10px;
+		margin-left: 35%;
+		& h4 {
+			margin-bottom: 10px;
+		}
+		& .view {
+			margin-left: -29px;
+		}
+		& .heart-icon {
+			margin: 10px 20px 0;
+		}
+	}
 }
+
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+	.hamburger {
+		width: 80px !important;
+		top: 0;
+		left: 10px;
+		height: 60px;
+		border: none !important;
+	}
+	#navigation {
+		width: 230px;
+		height: 60px;
+		left: 90px;
+	}
+	#navigation ul {
+		margin-top: 0;
+		a {
+			font-size: 9px;
+		}
+	}
+	.header-left {
+		padding: 75px 0 0 10px;
+	}
+	.header-socials {
+		margin-left: 0;
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	.header-left > .logo-img {
+		position: absolute;
+		top: 75px;
+		right: 100px;
+		bottom: 0;
+		left: 50%;
+		width: 150px;
+	}
+	.project_left-projects {
+		grid-column: span 24;
+	}
+	.projects-second {
+		position: absolute;
+		top: 200px;
+		left: 50px;
+		transform: rotate(-40deg);
+	}
+	.project_left-fondue {
+		grid-column: span 24;
+	}
+	.project_left-louis {
+		grid-column: span 24;
+	}
+	.project_left-p22 {
+		grid-column: span 24;
+	}
+	.project_right {
+		grid-template-columns: repeat(24, 1fr)
+	}
+	.project_right-potter {
+		display: none;
+	}
+	.project_right-tabano {
+		grid-column: span 24;
+	}
+	.project_right-fiji {
+		display: none;
+	}
+	.project_bottom-sesann {
+		grid-column: span 24;
+		.sesann__img {
+			width: 70%;
+			margin: 0 auto;
+		}
+		.sesann__content {
+			& h4 {
+				margin-right: 5px;
+			}
+			& .view {
+				margin-right: 5px;
+				width: 70px;
+			}
+		}
+	}
+	.project_bottom-alessi {
+		grid-column: span 24;
+	}
+	.footer {
+		padding-top: 10px;
+	}
+	.footer__logo {
+		margin-left: 0;
+		img {
+			width: 70px;
+		}
+	}
 }
 
 
