@@ -25,7 +25,6 @@
 	.projects-second {
 		top: 80%;
 		bottom: 100px;
-		left: 70px;
 	}
 	.project_left-fondue {
 		grid-column: span 16;
@@ -50,7 +49,7 @@
 	.potter__img {
 		position: absolute;
 		width: 40%;
-		top: 120px;
+		top: 70px;
 		bottom: 5px;
 		left: 50%;
 		right: 5px;
@@ -130,8 +129,8 @@
 		display: none;
 	}
 	.projects-second{
-		top: 200px;
-		left: 50px;
+		top: 230px;
+		right: 10px;
 	}
 	.fondue-left {
 		margin-top: 20px;

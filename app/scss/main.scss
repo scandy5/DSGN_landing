@@ -106,6 +106,7 @@ b, strong {
 .header-socials {
 	margin-left: 20px;
 	margin-top: 62px;
+	margin-bottom: 30px;
 	z-index: 3;
 	position: relative;
 }
@@ -165,7 +166,7 @@ b, strong {
 }
 .project_left {
 	grid-template-columns: repeat(24, 1fr);
-	grid-column: span 18;
+	grid-column: span 17;
 }
 .project_left-projects {
 	grid-column: span 8;
@@ -222,7 +223,7 @@ b, strong {
 .projects-second {
 	position: absolute;
 	top: 300px;
-	left: 160px;
+	right: 50px;
 }
 h2 {
 	font-size: 48px;
@@ -364,7 +365,7 @@ a.view img {
 }
 .project_right {
 	grid-template-rows: repeat(24, 1fr);
-	grid-column: span 6;
+	grid-column: span 7;
 }
 .project_right-potter {
 	grid-row: span 6;
@@ -712,78 +713,8 @@ a.view img {
 
 }
 
-// Menu
 
-// #sidebar {
-// 	width: 750px;
-// 	height: 120px;
-// 	background-color: #f8c255;
-// 	position: fixed;
-// 	right: -760px;
-// 	top: 10px;
-// 	padding-bottom: 10px;
-// 	border-radius: 10px;
-// 	-moz-transition: all 600ms ease;
-// 	-webkit-transition: all 600ms ease;
-// 	transition: all 600ms ease;
-// 	z-index: 214124;
-// }
 
-// #sidebar.active {
-// 	right: 150px;
-// }	
-// #sidebar ul {
-// 	display: flex;
-// 	justify-content: space-around;
-// 	margin-top: 30px;
-// 	padding: 0;
-// }
-// #sidebar ul li {
-// 	list-style: none;
-// 	font-size: 18px;
-// 	text-transform: uppercase;
-// 	padding: 15px 10px;
-// }
-// #sidebar ul li a {
-// 	color: #eee;
-// 	text-decoration: none;
-// }
-// #sidebar ul li a:hover{color: #333;}
-
-// #sidebar .toggle-btn {
-// 	position: absolute;
-// 	right: 770px;
-// 	top: 0px;
-// 	background-image: url('../img/cube.png');
-// 	background-color: darken(#7acec3, 32%);
-// 	background-size: cover;
-// 	width: 125px;
-// 	height: 120px;
-// 	padding: 10px;
-// 	cursor: pointer;
-// 	opacity: .4;
-// 	transition: all .5s ease;
-// 	&:hover {
-// 		opacity: 1;
-// 	}
-// }
-// .active-btn {
-// 	position: absolute;
-// 	background-image: url('../img/close.png');
-// 	background-size: contain;
-// 	right: 120px;
-// 	left: 760px;
-// 	top: 0px;
-// 	width: 125px;
-// 	height: 120px;
-// 	padding: 10px;
-// 	border-radius: 10px;
-// 	cursor: pointer;
-// 	transition: all .25s ease;
-// 	&:hover {
-// 		transform: rotate(2deg);
-// 	}
-// }
 
 //btn-menu
 	.hamberger-inner{
@@ -814,7 +745,7 @@ a.view img {
 		right: 170px;
 		width: 124px;
 		height: 119px;
-		border: 1px solid #fff;
+		border: 3px solid #fff;
 	}
 	.is-active {
 		background-color: #f8c255;
