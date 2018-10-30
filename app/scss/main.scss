@@ -123,6 +123,12 @@ b, strong {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	h4 {
+		max-width: 98px;
+	}
+	h4.second {
+		max-width: 150px;
+	}
 }
 .header-right__img{
 	position: absolute;
@@ -218,6 +224,35 @@ b, strong {
 		}
 	}
 }
+.timeline__content-years {
+	a {
+		transition: all .25s ease;
+		color: #fff;
+		text-decoration: none;
+		position: relative;
+		&:before {
+			content: '';
+			background-image: url('../img/arrow_icon.svg');
+			background-position: center center;
+			background-size: cover;
+			width: 23px;
+			height: auto;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: -30px;
+			opacity: 0;
+		}
+	}
+	.first-link-arrow:hover, .second-link-arrow:hover, .third-link-arrow:hover, .fourth-link-arrow:hover, .fifth-link-arrow:hover {
+		color: #333;
+		font-weight: 700;
+		&:before {
+			opacity: 1;
+		}
+	}
+}
 // end arrow-hover
 
 .projects-second {
@@ -236,11 +271,18 @@ h2 {
 	max-height: 450px;
 	background-color: #FEFEFE;
 	position: relative;
+	h4 {
+		max-width: 220px;
+		font-size: 12px;
+		line-height: 12px;
+	}
 }
 .project_left-fondue .fondue__img {
 	max-height: 450px;
 	position: absolute;
 	right: 0;
+	top: 1%;
+	bottom: 1%;
 	left: 60%;
 }
 .fondue-flex {
@@ -254,6 +296,11 @@ h2 {
 .fondue-left h4 {
 	margin-top: 17px;
 	margin-bottom: 76px;
+}
+.fondue__img-img {
+	height: 100%;
+	max-width: 100%;
+	display: block;
 }
 a.view {
 	font-size: 18px;
@@ -281,7 +328,8 @@ a.view img {
 
 .fa-heart {
 	color: #333;
-	font-size: 23px;
+	font-size: 24px;
+	line-height: 10px;
 }
 .fondue-left .heart-icon {
 	margin-top: 100px;
@@ -316,6 +364,8 @@ a.view img {
 .louis__content h4 {
 	margin-top: 18px;
 	margin-bottom: 38px;
+	max-width: 150px;
+	font-size: 12px;
 }
 .louis__content a.view {
 	color: #fff;
@@ -359,6 +409,11 @@ a.view img {
 }
 .p22__content-left h4 {
 	margin-top: 16px;
+	font-size: 12px;
+	max-width: 150px;
+}
+.p22__content-right {
+	margin-top: -8px;
 }
 .p22__content-right .heart-icon {
 	margin: 25px auto;
@@ -386,6 +441,8 @@ a.view img {
 .potter__content h4 {
 	text-transform: none;
 	margin: 13px 0 10px;
+	max-width: 160px;
+	font-size: 12px;
 }
 .potter__content .heart-icon {
 	margin: 15px auto 0;
@@ -400,7 +457,7 @@ a.view img {
 	max-height: 450px;
 }
 .tabano__content{ 
-	align-items: center;
+	align-items: start;
 	margin: 70% 5px 0;
 }
 .tabano__img {
@@ -410,14 +467,18 @@ a.view img {
 	top: 20px;
 	bottom: 60%;
 }
-
-
 .tabano__content-text h4{
 	margin-top: 17px;
 	margin-right: 24px;
+	max-width: 155px;
+	font-size: 12px;
 }
 .tabano__content a.view {
 	margin-right: 15px;
+	margin-top: 25px;
+}
+.tabano__content .heart-icon {
+	margin-top: 30px;
 }
 .project_right-fiji {
 	grid-row: span 6;
@@ -436,6 +497,8 @@ a.view img {
 }
 .fiji__content h4 {
 	margin: 8px 0 15px;
+	font-size: 12px;
+	max-width: 144px;
 }
 .fiji__content .heart-icon {
 	margin: 16px auto 0;
@@ -459,12 +522,17 @@ a.view img {
 .sesann__content {
 	margin-top: 203px;
 	justify-content: center;
-	align-items: center;
 	& h4 {
 		margin-right: 50px;
+		font-size: 12px;
+		max-width: 168px;
 	}
 	& .view {
 		margin-right: 50px;
+		margin-top: 15px;
+	}
+	& .heart-icon {
+		margin-top: 20px;
 	}
 }
 .project_bottom-alessi{
@@ -484,6 +552,8 @@ a.view img {
 	padding-left: 20px;
 	& h4 {
 		margin-bottom: 32px;
+		font-size: 12px;
+		max-width: 126px;
 	}
 	& .view {
 		margin-left: -29px;
@@ -520,14 +590,13 @@ a.view img {
 .timeline__content-years {
 	align-items: flex-start;
 	color: #fff;
-	img {
-		margin-right: 9px;
-	}
+	margin-left: 28px;
 }
 .studio-logo {
 	img{
 		position: absolute;
-		width: 25%;
+		width: 30%;
+		height: 60%;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -620,7 +689,8 @@ a.view img {
 .news-logo {
 	img{
 		position: absolute;
-		width: 25%;
+		width: 30%;
+		height: 100%;
 		top: 0;
 		left: 0;
 		right: 0;

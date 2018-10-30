@@ -54,9 +54,17 @@
 		left: 50%;
 		right: 5px;
 	}
+	.tabano__img {
+		width: 40%;
+		margin: 0 auto;
+	}
 	.tabano__content{
 		flex-direction: column;
 		text-align: center; 
+		align-items: center;
+		h4 {
+			margin: 0;
+		}
 	}
 	.fiji__img {
 		position: absolute;
@@ -181,6 +189,11 @@
 	}
 	.studio {
 		padding-top: 20px;
+	}
+	.studio-logo {
+		img{
+			height: 40%;
+		}
 	}
 	.member-card {
 		width: 270px;
@@ -351,11 +364,15 @@
 	.project_left-projects {
 		grid-column: span 24;
 	}
+	.triagles {
+		padding-top: 50%;
+	}
 	.projects-second {
 		position: absolute;
-		top: 200px;
-		left: 50px;
-		transform: rotate(-40deg);
+		top: 80px;
+		right: 20px;
+		left: 30px;
+		transform: rotate(0deg);
 	}
 	.project_left-fondue {
 		grid-column: span 24;
@@ -374,9 +391,10 @@
 	}
 	.project_left-p22 {
 		grid-column: span 24;
+		min-height: 300px;
 		.p22__content {
 			margin-left: 20px;
-			margin-top: 100px;
+			margin-top: 150px;
 			.heart-icon {
 				margin-right: 80px;
 			}
@@ -428,6 +446,16 @@
 		}
 	}
 
+	.studio-logo {
+		img {
+			height: 20%;
+		}
+	}
+	.news-logo {
+		img {
+			height: 40%;
+		}
+	}
 	iframe {
 		width: 100%;
 		height: 200px;
