@@ -268,22 +268,26 @@ h2 {
 }
 .project_left-fondue {
 	grid-column: span 16;
-	max-height: 450px;
 	background-color: #FEFEFE;
 	position: relative;
+	&:before {
+		content: '';
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		background-image: url(../img/lamp.png);
+		background-size: contain;
+		background-position: 80% 0;
+		background-repeat: no-repeat;
+	}
 	h4 {
 		max-width: 220px;
 		font-size: 12px;
 		line-height: 12px;
 	}
-}
-.project_left-fondue .fondue__img {
-	max-height: 450px;
-	position: absolute;
-	right: 0;
-	top: 1%;
-	bottom: 1%;
-	left: 60%;
 }
 .fondue-flex {
 	display: flex;
