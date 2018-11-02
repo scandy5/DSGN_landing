@@ -23,8 +23,8 @@
 		left: 80px;
 	}
 	.projects-second {
-		top: 80%;
-		bottom: 100px;
+		bottom: 20px;
+		right: 20px;
 	}
 	.project_left-fondue {
 		grid-column: span 16;
@@ -137,7 +137,7 @@
 		display: none;
 	}
 	.projects-second{
-		top: 230px;
+		bottom: 30px;
 		right: 10px;
 	}
 	.fondue-left {
@@ -265,9 +265,9 @@
 		left: 40px;
 	}
 	.projects-second {
-		transform: rotate(-56deg);
-		top: 180px;
-		left: -13px;
+		transform: rotate(-50deg);
+		bottom: 40px;
+		right: 10px;
 	}
 	.fondue-left {
 		margin-top: 30px;
@@ -369,9 +369,8 @@
 	}
 	.projects-second {
 		position: absolute;
-		top: 80px;
-		right: 20px;
-		left: 30px;
+		bottom: 10px;
+		right: 10px;
 		transform: rotate(0deg);
 	}
 	.project_left-fondue {
