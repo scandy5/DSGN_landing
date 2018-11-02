@@ -69,7 +69,7 @@ b, strong {
 	width: 162px;
 }
 .header-left {
-	grid-column: span 18;
+	grid-column: span 17;
 	display: flex;
 	justify-content: space-between;
 	background-color: #F3F3F3;
@@ -118,7 +118,7 @@ b, strong {
 	line-height: 18px;
 }
 .header-right {
-	grid-column: span 6;
+	grid-column: span 7;
 	background-color: #7acec3;
 	position: relative;
 	width: 100%;
@@ -513,7 +513,7 @@ a.view img {
 
 }
 .project_bottom-sesann{
-	grid-column: span 12;
+	grid-column: span 11;
 	background-color: #fcfcfc;
 	position: relative;
 }
@@ -567,7 +567,7 @@ a.view img {
 	}
 }
 .project_bottom-timeline{
-	grid-column: span 6;
+	grid-column: span 7;
 	background-color: #ebb240;
 	position: relative;
 	h3 {
