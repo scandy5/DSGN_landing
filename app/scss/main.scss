@@ -816,11 +816,15 @@ a.view img {
 		width: 124px;
 		height: 119px;
 		border: 3px solid #fff;
+		outline: none !important;
 	}
 	.is-active {
 		background-color: #f8c255;
+		border: 3px solid #f8c255;
+		outline: none !important; 
 		&:hover {
 			opacity: 1 !important;
+			outline: none !important; 
 		}
 	}
 	#navigation ul {
