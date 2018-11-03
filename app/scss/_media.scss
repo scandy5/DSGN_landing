@@ -359,7 +359,7 @@
 		right: 1px;
 		bottom: 0;
 		left: 40%;
-		width: 210px;
+		width: 200px;
 	}
 	.project_left-projects {
 		grid-column: span 24;
@@ -401,14 +401,19 @@
 		min-height: 300px;
 		.p22__content {
 			margin-left: 20px;
-			margin-top: 150px;
+			margin-top: 50px;
+			flex-direction: column;
 			.heart-icon {
-				margin-right: 80px;
+				margin-right: 90%;
 			}
 		}
 		.p22__img {
-			top: 5px;
-			margin: 0 auto;
+			top: 30%;
+			right: 5px;
+			bottom: 0;
+			left: 48%;
+			margin: 20px 0 ;
+			width: 50%;
 		}
 	}
 	.project_right {
