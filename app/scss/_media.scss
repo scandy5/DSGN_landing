@@ -367,11 +367,19 @@
 	.triagles {
 		padding-top: 50%;
 	}
-	.projects-second {
+	.projects-first {
 		position: absolute;
+		top: 70px;
+		left: 42%;
+		bottom: 200px;
+	}
+	.projects-second {
+		position: relative;
 		bottom: 10px;
-		right: 10px;
+		right: 0;
 		transform: rotate(0deg);
+		text-align: center;
+		margin: 0 auto;
 	}
 	.project_left-fondue {
 		grid-column: span 24;
@@ -459,6 +467,9 @@
 		width: 100%;
 		height: 200px;
 		border: 0;
+	}
+	.triagles::before {
+		width: 0;
 	}
 }
 
