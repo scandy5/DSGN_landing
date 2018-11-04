@@ -272,6 +272,7 @@ h2 {
 	grid-column: span 16;
 	background-color: #FEFEFE;
 	position: relative;
+	height: 100%;
 	&:before {
 		content: '';
 		height: 100%;
@@ -298,6 +299,7 @@ h2 {
 .fondue-left {
 	margin-top: 87px;
 	margin-left: 103px;
+	z-index: 2;
 }
 .fondue-left h4 {
 	margin-top: 17px;
@@ -307,6 +309,7 @@ h2 {
 	height: 100%;
 	max-width: 100%;
 	display: block;
+	z-index: 1;
 }
 a.view {
 	font-size: 18px;
