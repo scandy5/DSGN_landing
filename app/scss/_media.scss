@@ -238,7 +238,7 @@
 		top: 10px;
 		width: 600px;
 		height: 120px;
-		left: 140px;
+		left: 139px;
 		z-index: 231;
 	}
 	.hamburger {
@@ -247,8 +247,12 @@
 		z-index: 23123;
 		left: 20px;
 		max-width: 124px;
-		height: 119px;
+		height: 121px;
 		border: 1px solid #fff;
+		outline: none !important;
+	}
+	.is-active {
+		outline: none !important;
 	}
 	.hamburger-inner::after, .hamburger-inner, .hamburger-inner::before{
 		background-color: #666;
