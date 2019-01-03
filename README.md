@@ -18,4 +18,4 @@ Demo you can see, if you click [here].
 ### Result:
 ![home](https://github.com/scandy5/DSGN_landing/blob/master/app/img/DSGN_.png)
 
-[here]: https://scandy5.github.io/minus-nerves/app
+[here]: https://scandy5.github.io/DSGN_landing/app
