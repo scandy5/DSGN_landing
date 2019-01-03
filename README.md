@@ -9,6 +9,7 @@ Demo you can see, if you click [here].
 + SASS -> CSS
 + JS
 + Bootstrap 4
++ Gulp
 
 ## How to start project
  - open console 
